@@ -1,10 +1,22 @@
 package Recursion;
-
 public class IslandInfection {
+    // edge case
     public int countIsland(int[][] m){
-        if()
-
-
+        if(m == null|| m[0] == null){
+            return 0;
+        }
+        int N = m.length;
+        int M = m[0].length;
+        int res =0;
+        for (int i =0; i< N; i++){
+            for (int j =0; j<M; j++){
+                if (m[i][j] ==1){
+                    res++;
+                    infect(m,i,j,N,M);
+                }
+            }
+        }
+        return res;
     }
 
     private void infect(int[][] m, int i, int j, int N, int M){

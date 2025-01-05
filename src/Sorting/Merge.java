@@ -12,8 +12,6 @@ public class Merge {
         mergeSort(arr,L,mid);
         mergeSort(arr,mid+1,R);
         mergeProcess(arr,L,mid,R);
-
-
     }
     private void mergeProcess(int[] arr, int L, int M, int R){
         int[] tmp = new int[R-L+1];
