@@ -1,4 +1,4 @@
-package AppleBags;
+package Logarithm_Validator;
 
 public class BasicMethodForAppleBages {
     // Assume we only have bages that can contain 6 or 8 apples
